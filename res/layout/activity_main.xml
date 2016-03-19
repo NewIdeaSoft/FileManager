@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/path"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="TextView"
+        android:textSize="10sp"
+        android:textColor="#ffffff"
+        android:background="#222222"
+        android:gravity="center_vertical" />
+
+    <ListView
+        android:id="@+id/filelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/path"
+        android:layout_marginBottom="70dp" >
+    </ListView>
+
+    <GridView
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:numColumns="6"
+        android:horizontalSpacing="10dp"
+        android:background="#000000" >
+    </GridView>
+
+</RelativeLayout>
